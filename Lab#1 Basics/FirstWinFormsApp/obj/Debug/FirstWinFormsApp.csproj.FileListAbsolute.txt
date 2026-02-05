@@ -1,0 +1,11 @@
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\bin\Debug\FirstWinFormsApp.exe.config
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\bin\Debug\FirstWinFormsApp.exe
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\bin\Debug\FirstWinFormsApp.pdb
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.Form1.resources
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.Properties.Resources.resources
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.exe
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.pdb
+C:\Users\PC\Desktop\VP LAB\FirstWinFormsApp\obj\Debug\FirstWinFormsApp.exe.config

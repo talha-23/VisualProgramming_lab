@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\VP LAB\TASK5\bin\Debug\TASK5.exe.config
+C:\Users\PC\Desktop\VP LAB\TASK5\bin\Debug\TASK5.exe
+C:\Users\PC\Desktop\VP LAB\TASK5\bin\Debug\TASK5.pdb
+C:\Users\PC\Desktop\VP LAB\TASK5\obj\Debug\TASK5.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\VP LAB\TASK5\obj\Debug\TASK5.Form1.resources
+C:\Users\PC\Desktop\VP LAB\TASK5\obj\Debug\TASK5.Properties.Resources.resources
+C:\Users\PC\Desktop\VP LAB\TASK5\obj\Debug\TASK5.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\VP LAB\TASK5\obj\Debug\TASK5.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\VP LAB\TASK5\obj\Debug\TASK5.exe
+C:\Users\PC\Desktop\VP LAB\TASK5\obj\Debug\TASK5.pdb

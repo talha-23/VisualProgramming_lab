@@ -1,0 +1,17 @@
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\bin\Debug\net8.0-windows\LAB1_TASks.exe
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\bin\Debug\net8.0-windows\LAB1_TASks.deps.json
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\bin\Debug\net8.0-windows\LAB1_TASks.runtimeconfig.json
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\bin\Debug\net8.0-windows\LAB1_TASks.dll
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\bin\Debug\net8.0-windows\LAB1_TASks.pdb
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.Form1.resources
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.AssemblyInfo.cs
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.dll
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\refint\LAB1_TASks.dll
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.pdb
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.genruntimeconfig.cache
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\ref\LAB1_TASks.dll
+C:\Users\PC\Desktop\VP LAB\LAB1_TASks\obj\Debug\net8.0-windows\LAB1_TASks.TASK_2.resources

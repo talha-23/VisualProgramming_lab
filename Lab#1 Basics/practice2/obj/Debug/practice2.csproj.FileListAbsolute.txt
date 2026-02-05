@@ -1,0 +1,11 @@
+C:\Users\PC\Desktop\VP LAB\practice2\bin\Debug\practice2.exe.config
+C:\Users\PC\Desktop\VP LAB\practice2\bin\Debug\practice2.exe
+C:\Users\PC\Desktop\VP LAB\practice2\bin\Debug\practice2.pdb
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.Form1.resources
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.Properties.Resources.resources
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.exe
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.pdb
+C:\Users\PC\Desktop\VP LAB\practice2\obj\Debug\practice2.exe.config
