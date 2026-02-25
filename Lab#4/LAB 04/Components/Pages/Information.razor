@@ -1,0 +1,43 @@
+﻿@page "/information"
+@attribute [StreamRendering]
+
+<h3>COPY PASTE TASK</h3>
+
+<form>
+    <!----input field for name-->
+    <label for="name">Full Name</label><br>
+    <input type="text" id="name"><br><br>
+    <!---input field for email-->
+    <label for="email">Email</label><br>
+    <input type="email" id="email"><br><br>
+    <!---input field for -->
+    <label for="pass">Password</label><br>
+    <input type="password" id="pass"><br><br>
+    <!---- radio box-->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male">Male<br>
+    <input type="radio" name="gender" value="female">Female<br>
+    <br>
+    <!-----checkbox-->
+    <label>hobbies</label><br>
+    <input type="checkbox" name="hobbies" value="sports">Sports<br>
+    <input type="checkbox" name="hobbies" value="cooking">Cooking<br>
+    <br>
+    <input type="submit" value="Register" />
+    <input type="reset" value="cancel" />
+    <br>
+    <label>Select course:</label><br>
+    <select>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="C#">C#</option>
+    </select>
+
+    <br><br>
+    <label>Comment:</label><br>
+    <textarea rows="5" cols="20"></textarea>
+    <br><br>
+    <button>Register</button>
+    <button type="reset">Reset</button>
+
+</form>

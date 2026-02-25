@@ -1,0 +1,134 @@
+﻿@page "/portfolio"
+@rendermode InteractiveServer
+
+<div class="container">
+
+    <h1>Muhammad Talha | Computer Science Student</h1>
+    <h3>Flutter Developer | Data Analyst</h3>
+
+    <img src="images/profile.jpg" alt="Profile">
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science student passionate about software development.
+            I am currently learning Blazor, Flutter, and modern application development.
+        </p>
+
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>BS Computer Science</td>
+                <td>Air University Islamabad</td>
+                <td>2024 – Present</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Flutter</li>
+            <li>SQL</li>
+            <li>Blazor</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Submit</button>
+    </section>
+
+    <a class="favorite" href="https://github.com/">Visit My GitHub</a>
+
+</div>
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    img {
+        margin: 15px 0;
+        border-radius: 6px;
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+        margin: 10px 0 20px;
+    }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+    section {
+        text-align: left;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin: 5px 0;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    button {
+        margin-top: 8px;
+        padding: 8px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .favorite {
+        display: block;
+        margin-top: 15px;
+        color: #007bff;
+        text-decoration: none;
+    }
+</style>
+
+@code {
+
+}

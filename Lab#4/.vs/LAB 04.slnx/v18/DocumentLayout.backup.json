@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC151F5F-9443-41B0-97F7-91EA661C412F}|LAB 04\\LAB 04.csproj|c:\\users\\talha\\desktop\\vp lab\\visualprogramming_lab\\lab 04\\lab 04\\components\\pages\\portfolio.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC151F5F-9443-41B0-97F7-91EA661C412F}|LAB 04\\LAB 04.csproj|solutionrelative:lab 04\\components\\pages\\portfolio.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC151F5F-9443-41B0-97F7-91EA661C412F}|LAB 04\\LAB 04.csproj|c:\\users\\talha\\desktop\\vp lab\\visualprogramming_lab\\lab 04\\lab 04\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC151F5F-9443-41B0-97F7-91EA661C412F}|LAB 04\\LAB 04.csproj|solutionrelative:lab 04\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC151F5F-9443-41B0-97F7-91EA661C412F}|LAB 04\\LAB 04.csproj|c:\\users\\talha\\desktop\\vp lab\\visualprogramming_lab\\lab 04\\lab 04\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC151F5F-9443-41B0-97F7-91EA661C412F}|LAB 04\\LAB 04.csproj|solutionrelative:lab 04\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\LAB 04\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "LAB 04\\Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\LAB 04\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "LAB 04\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T12:33:54.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\LAB 04\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "LAB 04\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\LAB 04\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "LAB 04\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T12:33:07.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Portfolio.razor",
+              "DocumentMoniker": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\LAB 04\\Components\\Pages\\Portfolio.razor",
+              "RelativeDocumentMoniker": "LAB 04\\Components\\Pages\\Portfolio.razor",
+              "ToolTip": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\LAB 04\\Components\\Pages\\Portfolio.razor*",
+              "RelativeToolTip": "LAB 04\\Components\\Pages\\Portfolio.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T12:32:58.367Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

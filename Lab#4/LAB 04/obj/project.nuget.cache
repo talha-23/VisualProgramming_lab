@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hadMKEtgDdc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TALHA\\Desktop\\VP LAB\\VisualProgramming_lab\\LAB 04\\LAB 04\\LAB 04.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TALHA\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
