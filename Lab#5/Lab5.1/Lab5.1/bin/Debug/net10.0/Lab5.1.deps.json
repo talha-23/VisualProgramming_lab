@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Lab5.1/1.0.0": {
+        "dependencies": {
+          "Blazor.Bootstrap": "3.4.0"
+        },
+        "runtime": {
+          "Lab5.1.dll": {}
+        }
+      },
+      "Blazor.Bootstrap/3.4.0": {
+        "runtime": {
+          "lib/net9.0/BlazorBootstrap.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab5.1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blazor.Bootstrap/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RlK531tJCXGEoESwjDIARttoRPtOCXXQqrNwfaai7sIWir2pqsBop0gySBqN742m+K2vY9p9J7Mwwl6XcNXm6g==",
+      "path": "blazor.bootstrap/3.4.0",
+      "hashPath": "blazor.bootstrap.3.4.0.nupkg.sha512"
+    }
+  }
+}

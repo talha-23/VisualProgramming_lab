@@ -1,0 +1,282 @@
+﻿@page "/Fiver"
+@using BlazorBootstrap
+
+<PageTitle>Freelance Services Marketplace | Fiverr</PageTitle>
+
+@* --- Navbar --- *@
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fiverr-navbar px-3 px-md-5 py-3">
+    <div class="container-fluid p-0">
+        <a class="navbar-brand me-4" href="#">
+            @* Fiverr Logo *@
+            <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#404145"><path d="m16.2 2.6c-5.7 0-9.4 3.6-9.4 9.1 0 5.4 3.7 8.9 9.3 8.9 2.5 0 4.3-.8 5.7-2.1l1.7 1.8c-1.9 2-4.5 3.1-7.6 3.1-7.1 0-12.1-4.9-12.1-11.7s5-11.9 12.1-11.9c3 0 5.6 1.1 7.4 3.1l-1.8 1.9c-1.4-1.3-3.1-2.2-5.3-2.2z"/><path d="m30.7 20.6h5v-10.4h-5v10.4zm2.5-12.5c1.5 0 2.7-1.1 2.7-2.7 0-1.5-1.2-2.7-2.7-2.7-1.5 0-2.7 1.2-2.7 2.7.1 1.6 1.3 2.7 2.7 2.7z"/><path d="m44 20.6v-7.8c0-3.3-1.8-5-4.4-5-2.2 0-4.1 1.3-4.8 3v-2.7h-5v12.5h5v-6.3c0-1.8 1.1-2.9 2.7-2.9 1.5 0 2.3 1 2.3 2.5v6.7h4.2z"/><path d="m58 12.2c0-4.2-3-7.7-7.6-7.7s-8.1 3.5-8.1 7.7.8 7.6 7.6 7.6h7.7v-2.3h-7.6c-2.3 0-3.1-1.1-3.1-1.9h11.1zm-11.1-2.2c0-1.1.8-2.2 3.1-2.2 2.2 0 3.1 1.1 3.1 2.2h-6.2z"/><path d="m66.1 10.4c0-1.8-1.2-2.9-2.7-2.9-1.5 0-2.3 1-2.3 2.5v10.6h-5v-12.5h5v2.7c.8-1.7 2.6-3 4.8-3 2.6 0 4.4 1.7 4.4 5v7.8h-4.2v-10.2z"/><path d="m82.1 10.4c0-1.8-1.2-2.9-2.7-2.9-1.5 0-2.3 1-2.3 2.5v10.6h-5v-12.5h5v2.7c.8-1.7 2.6-3 4.8-3 2.6 0 4.4 1.7 4.4 5v7.8h-4.2v-10.2z"/></g><path d="m86.1 20.6a2.9 2.9 0 1 1 0-5.8 2.9 2.9 0 0 1 0 5.8z" fill="#1dbf73"/>
+            </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            @* Search Bar - Uses Blazor Bootstrap InputGroup and Button *@
+            <form class="d-flex flex-grow-1 me-4 search-form">
+                <InputGroup class="border border-secondary rounded-2">
+                    <input type="text" class="form-control border-0 px-3 py-2" placeholder="What service are you looking for today?" />
+                    <Button Color="ButtonColor.Dark" class="px-4 py-2 text-white rounded-0 rounded-end">
+                        <i class="bi bi-search"></i>
+                    </Button>
+                </InputGroup>
+            </form>
+
+            @* Right-side Links *@
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-3">
+                <li class="nav-item">
+                    <Dropdown Color="DropdownColor.None" class="p-0 border-0 bg-transparent text-dark fw-normal fiverr-nav-link">
+                        <DropdownToggleButton class="p-0 border-0 text-dark fw-bold bg-transparent">Fiverr Pro</DropdownToggleButton>
+                        <DropdownMenu>
+                            <DropdownItem href="#">Option 1</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                </li>
+                <li class="nav-item">
+                    <Dropdown Color="DropdownColor.None" class="p-0 border-0 bg-transparent text-dark fw-normal fiverr-nav-link">
+                        <DropdownToggleButton class="p-0 border-0 text-dark fw-bold bg-transparent">Explore</DropdownToggleButton>
+                        <DropdownMenu>
+                            <DropdownItem href="#">Discover</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#">
+                        <i class="bi bi-globe me-1"></i>EN
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Become a Seller</a></li>
+                <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Sign In</a></li>
+                <li class="nav-item">
+                    <Button Color="ButtonColor.None" class="btn-outline-fiverr px-4 py-2 text-fiverr fw-bold btn-sm">Join</Button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+@* --- Main Content Area --- *@
+<div class="container-fluid px-3 px-md-5 pt-4 pb-5">
+
+    @* --- Category Icons Grid --- *@
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 row-cols-lg-9 g-3 mb-5 text-center category-grid">
+        @foreach (var category in _categories)
+        {
+            <div class="col">
+                <Card class="h-100 shadow-sm border-0 rounded-3">
+                    <CardBody class="d-flex flex-column align-items-center justify-content-center p-3 text-center">
+                        <div class="category-icon mb-2">
+                            <img src="@category.IconUrl" alt="@category.Title" />
+                        </div>
+                        <p class="category-title mb-0 fw-semibold text-dark">@category.Title</p>
+                    </CardBody>
+                </Card>
+            </div>
+        }
+    </div>
+
+    @* --- "Popular Services" Section --- *@
+    <h2 class="h1 fw-bold text-dark mb-4">Popular services</h2>
+
+    @* Service Cards - Uses Row for grid and custom CSS for cards *@
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-4 popular-services-grid pb-5">
+        @foreach (var service in _popularServices)
+        {
+            <div class="col position-relative">
+                <div class="card service-card border-0 h-100 text-white rounded-3 overflow-hidden shadow-sm">
+                    <div class="card-img-overlay d-flex flex-column p-0">
+                        <div class="top-section p-3">
+                            <h5 class="card-title fw-bold">@service.Title</h5>
+                            @if (!string.IsNullOrEmpty(service.SubTitle))
+                            {
+                                <p class="card-subtitle small text-white-50">@service.SubTitle</p>
+                            }
+                        </div>
+                        <div class="bottom-section text-center p-3">
+                            <img src="@service.ImageUrl" class="service-icon" alt="@service.Title icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        @* Right Navigation Arrow *@
+        <div class="position-absolute service-grid-nav end-0 top-50 translate-middle-y me-3">
+            <Button Color="ButtonColor.Light" class="rounded-circle shadow border p-3">
+                <i class="bi bi-chevron-right text-dark"></i>
+            </Button>
+        </div>
+    </div>
+</div>
+
+@* --- Dark Call to Action Footer --- *@
+<div class="footer-cta text-center text-white py-5 mt-5">
+    <div class="container">
+        <h2 class="display-4 fw-bold mb-4">Freelance services at your <span class="accent-text">fingertips</span></h2>
+        <Button Color="ButtonColor.Light" class="px-5 py-3 fw-bold rounded-pill shadow">Join Fiverr</Button>
+    </div>
+</div>
+
+
+@code {
+    private List<CategoryItem> _categories = new()
+    {
+        new("Programming & Tech", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/tech.a4e8d38.svg"),
+        new("Graphics & Design", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/design.435b62b.svg"),
+        new("Digital Marketing", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/marketing.c289a69.svg"),
+        new("Writing & Translation", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/writing.23a41e9.svg"),
+        new("Video & Animation", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/video.96c4296.svg"),
+        new("AI Services", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/ai.cf6f698.svg"),
+        new("Music & Audio", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/music.317c093.svg"),
+        new("Business", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/business.720a442.svg"),
+        new("Consulting", "https://img.fiverr.com/npm-assets/@fiverr/search-inline/graphics/consulting.3475f4d.svg"),
+    };
+
+    private List<ServiceItem> _popularServices = new()
+    {
+        new("Vibe Coding", "", "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/798403fede61b8794968593f61942417-1721996236934/coding-icon.png"),
+        new("Website", "Development", "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/798403fede61b8794968593f61942417-1721996236928/website-icon.png"),
+        new("Video Editing", "", "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/798403fede61b8794968593f61942417-1721996236922/video-icon.png"),
+        new("Software", "Development", "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/798403fede61b8794968593f61942417-1721996236934/coding-icon.png"), // Using coding icon again for likeness
+        new("Book Publishing", "", "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/798403fede61b8794968593f61942417-1721996236922/open-book.png"),
+        new("Architecture &", "Interior Design", "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/798403fede61b8794968593f61942417-1721996236928/house-design.png"),
+    };
+
+    public record CategoryItem(string Title, string IconUrl);
+    public record ServiceItem(string Title, string SubTitle, string ImageUrl);
+}
+
+<style>
+    /* Fiverr Theme Colors */
+    :root {
+        --fiverr-primary: #1dbf73;
+        --fiverr-text-dark: #222325;
+        --fiverr-bg-dark: #401d2c; /* Correct dark red/maroon color from screenshot */
+        --fiverr-card-green: #0d3b2e; /* The specific dark green for cards */
+        --fiverr-card-beige: #efebe8; /* A light beige for the bottom of cards */
+        --fiverr-nav-link-color: #62646a;
+    }
+
+    /* Navbar styling */
+    .fiverr-navbar {
+        font-family: 'Inter', sans-serif;
+    }
+    .fiverr-navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+    .fiverr-navbar .nav-link {
+        color: var(--fiverr-text-dark);
+        font-weight: 600;
+        font-size: 14px;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    .search-form {
+        max-width: 600px;
+    }
+    .fiverr-nav-link .dropdown-toggle {
+        font-size: 14px;
+        color: var(--fiverr-text-dark) !important;
+    }
+    .btn-outline-fiverr {
+        border: 1px solid var(--fiverr-primary);
+        border-radius: 4px;
+        color: var(--fiverr-primary);
+        font-size: 14px;
+    }
+    .btn-outline-fiverr:hover {
+        background-color: var(--fiverr-primary);
+        color: white;
+    }
+
+    /* Category Grid styling */
+    .category-grid .card {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .category-grid .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    }
+    .category-grid .category-icon img {
+        width: 48px;
+        height: 48px;
+    }
+    .category-grid .category-title {
+        font-size: 13px;
+        color: var(--fiverr-text-dark);
+        margin-top: 8px;
+    }
+
+    /* Popular Services Grid styling */
+    .popular-services-grid .service-card {
+        background-color: var(--fiverr-card-green); /* Dark green top */
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular-services-grid .card-img-overlay {
+        justify-content: space-between;
+    }
+
+    .popular-services-grid .service-card .top-section {
+        flex-grow: 1;
+    }
+
+    .popular-services-grid .service-card .bottom-section {
+        background-color: var(--fiverr-card-beige); /* Beige bottom */
+        height: 100px; /* Fixed height for image area */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    }
+
+    .popular-services-grid .service-card .card-title {
+        font-size: 1.25rem;
+        color: white;
+    }
+    .popular-services-grid .service-card .card-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .popular-services-grid .service-card .service-icon {
+        max-height: 80px; /* Control image size */
+        object-fit: contain;
+    }
+    
+    .popular-services-grid .service-grid-nav .btn {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Footer CTA styling */
+    .footer-cta {
+        background-color: var(--fiverr-bg-dark); /* Dark red background */
+        font-family: 'Inter', sans-serif;
+    }
+    .footer-cta h2 {
+        font-weight: 800;
+        font-size: 3.5rem; /* Larger font size */
+    }
+    .footer-cta h2 .accent-text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300; /* Light accent text */
+    }
+    .footer-cta .btn {
+        background-color: white;
+        color: var(--fiverr-bg-dark);
+        border: none;
+        font-size: 1.2rem;
+    }
+    .footer-cta .btn:hover {
+        background-color: #f8f9fa;
+    }
+</style>
