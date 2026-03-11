@@ -1,0 +1,59 @@
+﻿@page "/task-list"
+@rendermode InteractiveServer
+
+
+<PageTitle>Dynamic Task List</PageTitle>
+
+<div class="container mt-4" style="max-width: 500px;">
+    <h3>Lab Task 4: Dynamic Task List</h3>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter a new task..."
+               @bind="newTask"/>
+        <button class="btn btn-primary" @onclick="AddTask" disabled="@(string.IsNullOrWhiteSpace(newTask))">
+            Add Task
+        </button>
+    </div>
+
+    <hr />
+
+    <ul class="list-group">
+        @if (tasks.Count == 0)
+        {
+            <li class="list-group-item text-muted">No tasks added yet.</li>
+        }
+        else
+        {
+            @foreach (var task in tasks)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    @task
+                    <button class="btn btn-danger btn-sm" @onclick="() => RemoveTask(task)">
+                        Remove
+                    </button>
+                </li>
+            }
+        }
+    </ul>
+</div>
+
+@code {
+    private string? newTask;
+    private List<string> tasks = new List<string>();
+
+    private void AddTask()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask))
+        {
+            tasks.Add(newTask);
+            newTask = string.Empty; 
+        }
+    }
+
+    private void RemoveTask(string taskToRemove)
+    {
+        tasks.Remove(taskToRemove);
+    }
+
+    
+}

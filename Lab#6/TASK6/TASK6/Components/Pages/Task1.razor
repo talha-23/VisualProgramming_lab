@@ -1,0 +1,44 @@
+﻿@page "/user-form"
+@rendermode InteractiveServer
+
+
+<PageTitle>User Registration Form</PageTitle>
+
+User Information Form
+
+<div class="form-container" style="max-width: 400px; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+    <div class="mb-3">
+        <label>Name:</label>
+        <input @bind="user.Name" @bind:event="oninput" class="form-control" placeholder="Enter name" />
+    </div>
+
+    <div class="mb-3">
+        <label>Age:</label>
+        <input type="number" @bind="user.Age" @bind:event="oninput" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Email:</label>
+        <input type="email" @bind="user.Email" @bind:event="oninput" class="form-control" placeholder="Enter email" />
+    </div>
+</div>
+
+<hr />
+
+Live Preview
+<div class="preview-box" style="background-color: #f9f9f9; padding: 15px; border-left: 5px solid #007bff;">
+    <p><strong>Name:</strong> @user.Name</p>
+    <p><strong>Age:</strong> @user.Age</p>
+    <p><strong>Email:</strong> @user.Email</p>
+</div>
+
+@code {
+    private UserInfo user = new UserInfo();
+
+    public class UserInfo
+    {
+        public string? Name { get; set; }
+        public int? Age { get; set; }
+        public string? Email { get; set; }
+    }
+}

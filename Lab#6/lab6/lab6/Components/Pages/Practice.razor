@@ -1,0 +1,18 @@
+﻿@page "/practice"
+@rendermode InteractiveServer
+
+<h1>practice</h1>
+
+
+<p role="status">current count: @currentcount</p>
+
+<button class="btn btn-primary" @onclick="incrementcount">click me</button>
+
+@code {
+    int currentcount = 0;
+
+    void incrementcount()
+    {
+        currentcount++;
+    }
+}

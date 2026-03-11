@@ -1,0 +1,147 @@
+﻿@page "/fiverr-clone"
+@rendermode InteractiveServer
+
+<style>
+    .fiverr-container {
+        font-family: 'Macan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    .nav-card {
+        border: 1px solid #e4e5e7;
+        border-radius: 12px;
+        transition: 0.3s;
+        cursor: pointer;
+        height: 110px;
+    }
+
+        .nav-card:hover {
+            border-color: #1dbf73;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+    .service-card {
+        border-radius: 16px;
+        overflow: hidden;
+        color: white;
+        position: relative;
+        height: 320px;
+        border: none;
+    }
+
+    .card-vibe {
+        background-color: #159e2d;
+    }
+    /*Dark green*/
+    .hero-banner {
+        background-color: #400d62;
+        border-radius: 12px;
+        padding: 60px 20px;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .btn-fiverr {
+        background-color: #1dbf03;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+
+        .btn-fiverr:hover {
+            background-color: #19a863;
+            color: white;
+        }
+
+    .img-placeholder {
+        background: #f1f1f1;
+        border-radius: 8px;
+        height: 160px;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container-fluid px-5 fiverr-container">
+
+    @*Header*@
+    <div class="d-flex align-items-center py-3 gap-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Fiverr_Logo_09.2020.svg" height="27" alt="Fiverr Logo" />
+        <div class="input-group flex-grow-1" style="max-width: 600px;">
+            <input type="text" class="form-control" placeholder="What service are you looking for today?">
+            <button class="btn btn-dark" type="button"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="d-flex gap-3 align-items-center ms-auto fw-bold text-secondary">
+            <span>Fiverr Pro</span>
+            <span>Explore</span>
+            <span>English</span>
+            <span>Become a Seller</span>
+            <span>Sign In</span>
+            <button class="btn btn-outline-success fw-bold px-3">Join</button>
+        </div>
+    </div>
+
+    @*Top Navigation Icons*@
+    <div class="row g-3 mt-2 text-center">
+        @foreach (var cat in Categories)
+        {
+            <div class="col">
+                <div class="nav-card d-flex flex-column align-items-center justify-content-center p-2">
+                    <i class="@cat.Icon fs-3 mb-2"></i>
+                    <span class="small fw-bold">@cat.Name</span>
+                </div>
+            </div>
+        }
+    </div>
+
+    @*Popular Services Section*@
+    <h2 class="fw-bold mt-5 mb-4">Popular services</h2>
+
+    <div class="row g-3">
+        @foreach (var service in Services)
+        {
+            <div class="col-md-2">
+                <div class="card service-card card-vibe p-3">
+                    <h5 class="fw-bold">@service.Title</h5>
+                    <div class="img-placeholder d-flex align-items-center justify-content-center">
+                        @* In a real app, replace with <img src="@service.ImgUrl" /> *@
+                        <span class="text-muted small">@service.Subtext</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @*Footer Banner*@
+    <div class="hero-banner text-center mb-5">
+        <h1 class="display-5 fw-normal">Freelance services at your <i>fingertips</i></h1>
+        <button class="btn btn-light mt-4 px-4 py-2 fw-bold">Join Fiverr</button>
+    </div>
+
+</div>
+
+@code {
+    private List<Category> Categories = new()
+    {
+        new("Programming & Tech", "bi bi-laptop"),
+        new("Graphics & Design", "bi bi-palette"),
+        new("Digital Marketing", "bi bi-megaphone"),
+        new("Writing & Translation", "bi bi-translate"),
+        new("Video & Animation", "bi bi-play-btn"),
+        new("AI Services", "bi bi-robot"),
+        new("Music & Audio", "bi bi-music-note-beamed"),
+        new("Business", "bi bi-briefcase"),
+        new("Consulting", "bi bi-people")
+    };
+
+    private List<Service> Services = new()
+    {
+        new("Vibe Coding", "Code with AI"),
+        new("Website Development", "Build your site"),
+        new("Video Editing", "Edit videos"),
+        new("Software Development", "Scalable apps"),
+        new("Book Publishing", "Publish stories"),
+        new("Architecture & Interior", "Design spaces")
+    };
+
+    public record Category(string Name, string Icon);
+    public record Service(string Title, string Subtext);
+}

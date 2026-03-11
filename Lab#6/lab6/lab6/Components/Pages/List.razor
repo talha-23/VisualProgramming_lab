@@ -1,0 +1,28 @@
+﻿@page "/list"
+@rendermode InteractiveServer
+<h3>Dynamic UI Updates</h3>
+
+<input @bind="newItem" placeholder="Enter item" />
+
+<button @onclick="AddItem">Add</button>
+
+<ul>
+    @foreach (var item in items)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+@code {
+    private string newItem = "";
+    private List<string> items = new List<string>();
+
+    private void AddItem()
+    {
+        if (!string.IsNullOrEmpty(newItem))
+        {
+            items.Add(newItem);
+            newItem = "";
+        }
+    }
+}

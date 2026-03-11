@@ -1,0 +1,53 @@
+﻿@page "/counter-task"
+@rendermode InteractiveServer
+
+
+<PageTitle>Event Handling Lab</PageTitle>
+Lab Task 2: Event Handling
+
+<div class="card p-4 shadow-sm" style="max-width: 500px;">
+    <div class="mb-4">
+        <h4>Counter: <span class="badge bg-primary">@currentCount</span></h4>
+        <button class="btn btn-success" @onclick="IncrementCount">
+            Increase Count
+        </button>
+        <button class="btn btn-outline-secondary" @onclick="ResetCount">
+            Reset
+        </button>
+    </div>
+
+    <hr />
+
+    <div class="mb-3">
+        <button class="btn @(isVisible ? "btn-danger" : "btn-info")" @onclick="ToggleVisibility">
+            @(isVisible ? "Hide Message" : "Show Message")
+        </button>
+    </div>
+
+    @if (isVisible)
+    {
+        <div class="alert alert-success mt-2">
+            <strong>Hello!</strong> You successfully toggled this message using event handling.
+        </div>
+    }
+</div>
+
+@code {
+    private int currentCount = 0;
+    private bool isVisible = false;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void ResetCount()
+    {
+        currentCount = 0;
+    }
+
+    private void ToggleVisibility()
+    {
+        isVisible = !isVisible;
+    }
+}
