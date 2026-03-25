@@ -1,0 +1,10 @@
+﻿@page "/session"
+@rendermode InteractiveServer
+@inject ScopedService scope
+
+
+<h3>Session Component Page</h3>
+
+<p style="text-align:center; font-weight:1000;">
+    <span style="font-weight:bolder">Session ID:</span> @scope.sessionid
+</p>

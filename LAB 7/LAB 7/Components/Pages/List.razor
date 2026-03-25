@@ -1,0 +1,163 @@
+﻿@page "/list"
+@rendermode InteractiveServer
+@inject listservice service
+
+<style>
+    .container {
+        width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    input {
+        width: 80%;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        padding: 6px 12px;
+        margin: 5px 3px;
+        border: none;
+        border-radius: 6px;
+        background-color: #667eea;
+        color: white;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background-color: #5a67d8;
+        }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 6px 0;
+        padding: 6px;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+        li button {
+            margin-left: 8px;
+            padding: 3px 6px;
+            font-size: 12px;
+        }
+</style>
+
+<div class="container">
+    <h3>List Manager</h3>
+
+    <input placeholder="Enter item" @bind="newitem" />
+    <button @onclick="additem">Add</button>
+
+    <br />
+
+    <input placeholder="Search item" @bind="searchtext" />
+    <button @onclick="performsearch">Search</button>
+    <button @onclick="refreshlist">Refresh</button>
+
+    <ul>
+        @if (filtereditems.Count == 0)
+        {
+            <li>No items found</li>
+        }
+        else
+        {
+            @foreach (var item in filtereditems)
+            {
+                <li>
+                    @item
+                    <button @onclick="() => deleteitem(item)">Delete</button>
+                    <button @onclick="() => startedit(item)">Edit</button>
+                </li>
+            }
+        }
+    </ul>
+
+    @if (isediting)
+    {
+        <input @bind="edittext" placeholder="Edit item" />
+        <button @onclick="saveedit">Save</button>
+    }
+</div>
+
+@code {
+    string newitem;
+    string searchtext;
+    string edittext;
+    string selecteditem;
+    bool isediting = false;
+
+    List<string> filtereditems = new List<string>();
+
+    protected override void OnInitialized()
+    {
+        refreshlist();
+    }
+
+    void refreshlist()
+    {
+        filtereditems = service.getall();
+    }
+
+    void additem()
+    {
+        if (!string.IsNullOrWhiteSpace(newitem))
+        {
+            service.add(newitem);
+            newitem = "";
+            refreshlist();
+        }
+    }
+
+    void deleteitem(string item)
+    {
+        service.delete(item);
+        refreshlist();
+    }
+
+    void startedit(string item)
+    {
+        selecteditem = item;
+        edittext = item;
+        isediting = true;
+    }
+
+    void saveedit()
+    {
+        if (!string.IsNullOrWhiteSpace(edittext))
+        {
+            service.edit(selecteditem, edittext);
+            isediting = false;
+            refreshlist();
+        }
+    }
+
+    void performsearch()
+    {
+        if (string.IsNullOrWhiteSpace(searchtext))
+        {
+            filtereditems = new List<string> { "Please enter search text" };
+        }
+        else
+        {
+            var result = service.search(searchtext);
+            if (result.Count == 0)
+                filtereditems = new List<string> { "Item not found" };
+            else
+                filtereditems = result;
+        }
+    }
+}
